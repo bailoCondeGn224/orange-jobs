@@ -1,0 +1,752 @@
+.globalContent {
+  width: 90%;
+  margin-inline: auto;
+   
+}
+
+ 
+.jobs {
+    flex: 1;
+    display: flex;
+    margin-inline: auto;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .jobsContent {
+    display: flex;
+    width: 100%;
+    gap: 64px;
+    margin-top: 25px; 
+  }
+  
+  .jobRight {
+    flex: 2;
+    background-color: #fff;
+  }
+  .lineHr{
+   margin: 10px;
+   padding: 0px 22px 0px 0px;
+  }
+  .jobLeftContent {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    padding: 12px;
+    display: inline-block;
+  }
+  
+  .jobLeft {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 22px 10px 10px;
+    border-radius: 1px #ccc solid;
+  }
+  
+  .filter,
+  .filterBy {
+    font-weight: bold;
+    letter-spacing: -2%;
+  }
+  .filterBy{
+    padding: 0px 5px 0px 0px;
+  }
+  
+  .jobLeft1 {
+    padding: 10px;
+  }
+  
+  .selectButton {
+    width: 100%;
+    padding: 5px 0px 0px 0px;
+  }
+  
+  .selectButton select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 0px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    color: #666;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .headContentRight1 select {
+    width: 100%;
+    height: 51px;
+    padding: 10px;
+    border-radius: 0px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    color: #666;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .jobsLeft2 {
+    padding: 10px;
+  }
+  
+  .resetFilter {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .categorieTitle {
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: -2%;
+  }
+  
+  .optionButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .optionButtons label
+  {
+    display: flex;
+    align-items: center;
+    padding:5px 5px 0px 5px;
+    border-radius: 0px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .optionButtons input[type="checkbox"]
+  {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .optionButtons .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 0px;
+    border: 1px rgb(209, 207, 207) solid;
+    transform: translateY(-50%);
+  }
+  
+  .optionButtons input[type="checkbox"]:checked ~ .checkmark,
+  .optionButtonCdi input[type="checkbox"]:checked ~ .checkmark {
+    background-color: #ff7900;
+  }
+  
+  .optionButtons .checkmark:after,
+  .optionButtonCdi .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .optionButtons input[type="checkbox"]:checked ~ .checkmark:after,
+  .optionButtonCdi input[type="checkbox"]:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .optionButtons .checkmark:after,
+  .optionButtonCdi .checkmark:after {
+    left: 6px;
+    top: 2px; 
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  .optionButtons .checkbox-label-text {
+    margin-left: 40px;
+  }
+  
+  .contentItem{
+    background-color: #FAFAFA;
+    word-wrap: break-word;
+    
+  }
+  .itemContents{
+    margin:   15px 0px;
+    padding: 12px;
+  }
+  .jobsLeft3 {
+    padding: 10px;
+  }
+  
+  .contratType {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .optionButtonCdi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .checkbox-label-text {
+    margin-left: 50px;
+  }
+  
+  .jobRight1 {
+    display: flex;
+    gap: 10px;
+    border-radius: 1px #666 solid;
+  }
+
+  .jobRight1 > .seachInputheadContentRight {
+    flex: 2; 
+  }
+  
+  .jobRight1 > .headContentRight1,
+  .jobRight1 > .buttonheadContentRight {
+    flex: 1;
+  }
+  
+  .headContentRight {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  
+  .buttonheadContentRight button{
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 0px;
+    background-color: #ff7900;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    height: 51px;
+    flex: 1;
+  }
+  
+  .seachInputheadContentRight {
+    position: relative;
+  }
+  .seachInputheadContentRight input {
+    width: 100%;
+    padding-left: 30px;
+    height: 51px;
+    border: 2px solid #9999;
+    font-size: 16px;
+  }
+  
+
+  .buttonHeadContentRight button:hover {
+    background-color: #0000;
+    color: white;
+  }
+  
+  .emploi {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    
+  }
+  .emploi  h3{
+    font-weight: bold;
+    letter-spacing: -2%;
+    font-size: 20px;
+    color: #000;
+  }
+  .item,
+  .itemContent {
+    padding: 12px 0px 0px 0px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .smallTitleitem {
+    color: #666;
+    padding: 4px 0px;
+    font-size: 14px;
+  }
+  
+  .categorieSiteContrat {
+    display: flex;
+    gap: 6px;
+  }
+  .backCdi{
+    background-color: rgba(68, 255, 177, 0.12);
+    border-radius: 30px;
+
+  }
+  .nbrjob{
+    background-color: #FAFAFA ;
+    border-radius: 30px;
+
+  }
+.titlejob {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+  }
+
+
+  .nbrjob h3{
+    padding: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  .cdi {
+    padding: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #50be87;
+  }
+  
+  .backSite{
+    background-color: rgba(97, 190, 233, 0.23);
+    border-radius: 30px;
+    font-weight: 700;
+  }
+  .backSites{
+    background-color: #FAFAFA ;
+    border-radius: 30px;
+    font-weight: 700;
+  }
+  .sites {
+    padding: 6px;
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+  }
+  .site {
+    padding: 6px;
+    font-size: 12px;
+    color: #527ebd;
+    font-weight: 700;
+  }
+  .backCandidature{
+    background-color: rgba(255, 1, 1, 0.05);
+    border-radius: 30px;
+    font-weight: 700;
+  }
+  .candidature {
+    padding: 6px;
+    font-size: 12px;
+    color: #dc3c14;
+  }
+  .itemContentText p{
+    font-size: 14px;
+    letter-spacing: -2%;
+    color: #666;
+    font-weight: 400;
+  }
+ 
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  color: #000;
+  left: 10px;
+  transform: translateY(-50%);
+  
+  
+}
+.seachInputheadContentRight input:focus ~ .searchIcon {
+  display: none;
+}
+.pagination {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.paginateContent {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+ 
+.css-9u5tl9-MuiPagination-root .MuiPaginationItem-root {
+  font-weight: bold !important;
+  border-radius: 0 !important;
+}
+
+/* Styles globaux pour les écrans jusqu'à 450px */
+
+@media(min-width:2560px){
+  .globalContent {
+    width: 70%;
+    margin-inline: auto;
+     
+  }
+}
+@media (max-width: 1500px) {
+  .globalContent {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .jobsContent {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    margin-top: 25px;
+}
+.jobRight1 {
+  display: flex;
+  width: 100%;
+  gap: 10px;  
+}
+.jobRight1 {
+  display: flex;
+  width: 100%;
+  gap: 10px; 
+  
+}
+
+.jobRight1 > .seachInputheadContentRight {
+  flex: 2; 
+}
+
+.jobRight1 > .headContentRight1,
+.jobRight1 > .buttonheadContentRight {
+  flex: 1;
+}
+
+.seachInputheadContentRight {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.seachInputheadContentRight .searchIcon {
+  position: absolute;
+  left: 10px;
+}
+
+.seachInputheadContentRight input {
+  width: 100%;
+  padding-left: 30px;
+  
+}
+
+.headContentRight1 select {
+  width: 100%;
+  padding: 5px;
+}
+
+.buttonheadContentRight button {
+  width: 100%;
+  padding: 5px;
+}
+
+}
+
+@media (max-width: 1050px) {
+  .globalContent {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .jobsContent {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    margin-top: 25px;
+}
+  .jobRight1 {
+    display: flex;
+    width: 100%;
+    gap: 10px;  
+  }
+  
+  .jobRight1 > div {
+    flex: 1;
+  }
+  
+  .seachInputheadContentRight {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .seachInputheadContentRight .searchIcon {
+    position: absolute;
+    left: 10px;
+  }
+  
+  .seachInputheadContentRight input {
+    width: 100%;
+    padding-left: 30px;  
+  }
+  
+  .headContentRight1 select {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .buttonheadContentRight button {
+    width: 100%;
+    padding: 5px;
+  }
+  
+ 
+}
+@media (max-width: 780px) {
+  .globalContent {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .jobsContent {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .contentLeft,
+  .jobRight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .seachInputheadContentRight,
+  .headContentRight1,
+  .buttonheadContentRight {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .seachInputheadContentRight input {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+  }
+  .jobRight1 {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  .jobRight1 > div {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .seachInputheadContentRight {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .seachInputheadContentRight .searchIcon {
+    position: absolute;
+    left: 10px;
+  }
+  
+  .seachInputheadContentRight input {
+    width: 100%;
+    padding-left: 30px;  
+  }
+  
+  .headContentRight1 select {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .buttonheadContentRight button {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  
+}
+@media (max-width: 450px) {
+  .globalContent {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .jobsContent {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .contentLeft,
+  .jobRight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .jobRight1 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .seachInputheadContentRight,
+  .headContentRight1,
+  .buttonheadContentRight {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .seachInputheadContentRight input {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+  }
+
+  .searchIcon {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .categorieSiteContrat {
+    display: flex;
+    font-size: 12px;  
+  }
+
+  .jobLeftContent {
+    padding: 8px;
+    margin: 0;
+  }
+
+  .jobLeft {
+    padding: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter,
+  .resetFilter,
+  .filterBy {
+    font-size: 14px;  
+  }
+
+  .selectButton select {
+    padding: 8px;
+    font-size: 14px;  
+  }
+
+  .optionButtons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px; 
+  }
+
+  .optionButtons label {
+    padding: 4px;
+    font-size: 14px;  
+  }
+
+  .itemContents {
+    margin: 10px 0;
+    padding: 8px;
+  }
+
+  .itemContentText p {
+    font-size: 12px;  
+  }
+
+ 
+    .emploi {
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        padding: 0px 5px;
+    }
+
+  .titlejob {
+    font-size: 18px;  
+  }
+
+  .nbrjob h3 {
+    font-size: 10px;   
+  }
+
+  .cdi {
+    font-size: 10px;  
+  }
+
+  .backSite,
+  .backCandidature {
+    font-size: 10px;  
+  }
+
+  .footer {
+    padding: 20px 0;
+  }
+
+  .firstPart {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tex {
+    font-size: 14px;  
+  }
+  .secondPart {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .hrFooter {
+    border-top-width: 1px;
+  }
+
+  .contentLeft, .jobRight1 {
+    display: none;
+  }
+  .pagination {
+    margin-top: 3px;  
+  }
+
+  .paginateContent {
+    display: flex;
+    justify-content: center;
+    padding: 1px;  
+  }
+
+  .MuiPagination-ul {
+    justify-content: center; 
+  }
+
+  .MuiPaginationItem-root {
+    font-size: 11px;  
+    padding: 1px; 
+    margin: 1px;
+  }
+  
+}
+

@@ -1,0 +1,310 @@
+/* Styles globaux */
+.FirstContent {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+.content {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 64px;
+}
+
+.title h1 {
+  font-size: 24px;
+  letter-spacing: -2%;
+  font-weight: 700;
+}
+
+.siteJOB {
+  margin-bottom: 50px;
+}
+
+.contrat {
+  margin-top: 20px;
+  display: flex;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cdi,
+.site,
+.limiteDate {
+  padding: 6px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.cdi {
+  color: #50be87;
+}
+
+.site {
+  color: #527ebd;
+}
+
+.limiteDate {
+  color: #dc3c14;
+}
+
+.bgcdi,
+.bgsite,
+.bglimiteDate {
+  border-radius: 30px;
+  padding: 6px;
+  display: inline-block;
+}
+
+.bgcdi {
+  background-color: rgba(68, 255, 177, 0.12);
+}
+
+.bgsite {
+  background-color: rgba(97, 190, 233, 0.23);
+}
+
+.bglimiteDate {
+  background-color: rgba(255, 1, 1, 0.05);
+}
+
+.detailContrat p {
+  line-height: 0.9;
+  margin-bottom: 8px;
+}
+
+.contentDescription ul {
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+.descriptifPost h2,
+.seachProfil h2,
+.entite h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29.3px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -2%;
+}
+
+.seconditems {
+  list-style-type: disc;
+  padding-left: 20px;
+  padding-top: 8px; 
+  margin-top: -8px;
+}
+
+.seconditems .third {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.seachProfil {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.entite {
+  margin-top: 40px;
+}
+
+.entiteContent {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -2%;
+}
+
+.contentPost {
+  margin-bottom: 100px;
+}
+
+.buttonPost {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.postButton {
+  height: 51px;
+  width: 179px;
+  padding: 10px 30px;
+  background-color: #ff7900;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.93px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.postButton:hover {
+  background-color: black;
+  color: white;
+}
+
+.other {
+  margin-top: 50px;
+  background-color: #fafafa;
+  padding: 60px 15px;
+  margin-bottom: -150px;
+}
+
+.otherContent {
+  width: 80%;
+  margin-inline: auto;
+}
+
+/* Styles responsives */
+@media(min-width:2560px){
+  .content {
+    width: 70%;
+}
+
+.postButton {
+    width: 160px;
+}
+
+.otherContent {
+  width: 70%;
+  margin-inline: auto;
+}
+
+
+}
+@media(max-width:1440px){
+  .content {
+    width: 100%;
+    margin-inline: auto;
+    padding: 0px 20px 0px 20px;
+}
+
+.postButton {
+    width: 160px;
+}
+.other {
+  margin-top: 50px;
+  background-color: #fafafa;
+  padding: 20px 15px;
+  margin-bottom: -150px;
+}
+
+.otherContent {
+  width: 100%;
+  margin-inline: auto;
+}
+}
+@media (max-width: 1200px) {
+  .content {
+      width: 100%;
+      margin-inline: auto;
+      padding: 10px;
+  }
+
+  .postButton {
+      width: 160px;
+  }
+
+  .otherContent {
+    width: 100%;
+    margin-inline: auto;
+    padding: 10px 0px 100px 10px;
+  }
+}
+@media (max-width: 992px) {
+  .content {
+      width: 90%;
+  }
+
+  .postButton {
+      width: 150px;
+      font-size: 16px;
+  }
+
+  .title h1 {
+      font-size: 22px;
+  }
+
+  .siteJOB {
+      margin-bottom: 40px;
+  }
+
+  .otherContent {
+    width: 90%;
+    margin-inline: auto;
+  }
+  .seachProfil h2,
+  .entite h2,
+  .descriptifPost h2 {
+      font-size: 22px;
+  }
+
+  .other {
+      padding: 40px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+      width: 95%;
+      margin-top: 50px;
+      padding: 10px;
+  }
+
+  .postButton {
+      width: 140px;
+      font-size: 14px;
+
+  }
+
+  .title h1 {
+      font-size: 20px;
+  }
+
+  .seachProfil h2,
+  .entite h2,
+  .descriptifPost h2 {
+      font-size: 20px;
+  }
+  .otherContent {
+    width: 95%;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+      width: 100%;
+      margin-top: 40px;
+      padding: 10px;
+  }
+
+  .postButton {
+      width: 130px;
+      font-size: 12px;
+  }
+
+  .title h1 {
+      font-size: 18px;
+  }
+
+  .seachProfil h2,
+  .entite h2,
+  .descriptifPost h2 {
+      font-size: 18px;
+  }
+
+  .other {
+      padding: 30px 15px;
+  }
+
+  .otherContent {
+      width: 100%;
+  }
+}
